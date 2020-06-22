@@ -1,4 +1,4 @@
-# Skeleton NodeJS app
+# Skeleton Java app
 
 A skeleton Java web app with no web framework.
 
