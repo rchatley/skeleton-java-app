@@ -6,15 +6,15 @@ import java.io.PrintWriter;
 
 public class ApiResponse {
 
-    private final String answer;
+  private final String answer;
 
-    public ApiResponse(String answer) {
-        this.answer = answer;
-    }
+  public ApiResponse(String answer) {
+    this.answer = answer;
+  }
 
-    public void writeTo(HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/plain");
-        PrintWriter writer = resp.getWriter();
-        writer.println(answer);
-    }
+  public void writeTo(HttpServletResponse resp) throws IOException {
+    resp.setContentType("text/plain");
+    PrintWriter writer = resp.getWriter();
+    writer.println(answer);
+  }
 }
